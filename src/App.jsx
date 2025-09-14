@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ProductList from "./components/ProductList";
+import Home from "./components/Home";
 import "./styles/styles.css";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       <Header />
       <div className="main">
         <Routes>
-          <Route path="/" element={<h1>Bienvenido a S&D Store 🛒</h1>} />
+          <Route path="/" element={<Home />} />
           <Route path="/productos" element={<ProductList />} />
           <Route path="/carrito" element={<h2>Tu carrito está vacío</h2>} />
         </Routes>
